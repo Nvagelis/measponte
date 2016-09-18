@@ -1,0 +1,16 @@
+.row{
+    @include make-row;
+}
+.instagram-1{
+    @include make-sm-col(6, 10px);
+    @include make-md-col(3, 10px);
+}
+.instagram-2{
+    @include make-sm-col(6, 10px);
+    @include make-md-col(3, 10px);
+    
+}
+.facebook{
+    @include make-md-col(6, 10px);
+    
+}

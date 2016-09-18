@@ -1,0 +1,95 @@
+//home page intro sectiom
+.intro{
+    @include calc-size(0, 50px);
+    background-color: $orange-bg;
+    z-index: 4;
+    .container{
+        @include calc-size(0, 50px);
+        @include abs-pos;
+        clip: rect(auto, auto, auto, auto);
+    }
+    .coverimg{
+        @include calc-size(100px, 100px);
+        @include bg-image(url(../images/header.jpg));
+        margin: 50px;
+        opacity: 0; //animation value
+    }
+}
+
+.bar{
+    @include size(100%, 50px);
+    background-color: $orange-bg;
+    z-index: 3;
+    .container{
+        @include abs-pos;
+        @include size(100%, 50px);
+        clip: rect(auto, auto, auto, auto);
+    }
+}
+
+//home page philosophy section
+.philosophy{
+    @include size(100%, 100vh);
+    background-color: $light-bg;
+    z-index: 2;
+    .container{
+        @include size(100%, 100vh);
+        @include abs-pos;
+        clip: rect(auto, auto, auto, auto);
+    }
+}
+
+//home page collection section
+.collection{
+    @include size(100%, 100vh);
+    background-color: $orange-bg;
+    z-index: 1;
+    .container{
+        @include size(100%, 100vh);
+        @include abs-pos;
+        clip: rect(auto, auto, auto, auto);
+    }
+}
+
+//philosophy page
+.blog-header{
+    @include size(100%, 100vh);
+    background-color: $gray-bg;
+    .container{
+        @include abs-pos(fixed);
+        @include size(100%, 100vh);
+    }
+    .coverimg{
+        @include bg-image(url(../images/blog/bg-philosophy.jpg), 100%, 50%);
+        @include size(100%, 100vh);
+    }
+}
+
+.blog{
+    background-color: $orange-bg;
+    .container{
+        padding: 10% 0 20%;
+    }
+}
+
+//social wall page
+.social-wall{
+    @include size(100%, 100%);
+    background-color: $orange-bg;
+    .container{
+        padding-top: 25vh;
+    }
+}
+
+//contact page
+.contact{
+    @include size(100%, 100vh);
+    background-color: $orange-bg;
+    .container{
+        @include size(100%, 100vh);
+    }
+    .coverimg{
+        @include bg-image(url(../images/contact.jpg), 50%, 50%);
+        @include size(100%, 100vh);
+    }
+}

@@ -1,0 +1,45 @@
+.title{
+    .hide-cont{
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .line-height{
+        @include size(100%, auto);
+        overflow: hidden;
+        @include media-to('md'){
+            @include size(100%, auto);
+        }
+    }
+    h2{
+        @include font-size(14px);
+        font-family: $secondary-font-family;
+        color: $orangetext;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-weight: 400;
+        transform: translate3d(0, 100%, 0); // animation value
+    }
+    p{
+        @include font-size(16px);
+        line-height: 22px;
+        font-weight: 400;
+        color: $lighttext;
+        transform: translate3d(0, 100%, 0); //animation value
+        @include media-to('xs'){
+            @include font-size(18px);
+            line-height: 32px;
+        }
+        @include media-to('md'){
+            @include font-size(34px);
+            line-height: 40px;
+        }
+    }
+    span{
+        color: $graf-color;
+    }
+}
+
+.phrase{
+    overflow: hidden;
+}
+

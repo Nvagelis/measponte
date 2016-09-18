@@ -1,0 +1,23 @@
+.viewpoint{
+    img{
+        @include img-block;
+    }
+}
+.slider{
+    .view{
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+    }
+    .control-button{
+        margin-top: 25px;
+        float: right;
+    }
+    .viewpoint{
+        height: 100%;
+        li{
+            @include abs-pos(absolute);
+            @include size(100%, 100%);
+        }
+    }
+}

@@ -1,0 +1,8 @@
+@function calculateRem($size) {
+    $remSize: $size / 10px;
+    @return $remSize * 1rem;
+}
+@function calculateEm($size){
+    $emSize: $size / $font-size;
+    @return $emSize * 1em;
+}

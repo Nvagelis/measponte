@@ -1,0 +1,35 @@
+.philosophy{
+    .title-box{
+        @include positionig(absolute, 25vh, 8vw, 0, 0);
+    }
+}
+.philosophy{
+    .arrow-big{
+        position: absolute;
+        width: 290px;
+        top: 45vh;
+        right: 1081px;
+        z-index: 3;
+    }
+    .slider{
+        position: absolute;
+        top: 176px;
+        right: 320px;
+    }
+    .ph-parag{
+        background-color: $dark-bg;
+        position: absolute;
+        left: 10%;
+        bottom: 160px;
+        
+    }
+    .discover{
+        position: absolute;
+        bottom: 120px;
+        left: 30%;
+    }
+    .vert-line-sec{
+        @include make-vert-line;
+        @include positionig(relative, 0, 50%, -50%, 0);
+    }
+}

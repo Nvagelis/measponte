@@ -1,0 +1,232 @@
+.animated{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.slideUp{
+    animation-name: slideup;
+    @at-root{
+        @keyframes slideup{
+            0% {
+                transform: translate3d(0, 100%, 0);
+                visibility: visible;
+            }
+            100% {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    }
+}
+.slideDwon{
+    animation-name: slidedown;
+    @at-root{
+        @keyframes slidedown{
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+            100% {
+                visibility: hidden;
+                transform: translate3d(0, 100%, 0);
+            }
+        }
+    }
+}
+.fadeUp{
+    animation-name: fadeup;
+    @at-root{
+        @keyframes fadeup{
+            0% {
+                opacity: 0;
+                transform: translate3d(-50%, 100%, 0);
+            }
+            100% {
+                opacity: 1;
+                transform: translate3d(-50%, 0%, 0);
+            }
+        }
+    }
+}
+.fadeUp2{
+    animation-name: fadeup2;
+    @at-root{
+        @keyframes fadeup2{
+            0% {
+                opacity: 0;
+                transform: translate3d(0%, 100%, 0);
+            }
+            100% {
+                opacity: 1;
+                transform: translate3d(0%, 0%, 0);
+            }
+        }
+    }
+}
+.fadeRight{
+    animation-name: faderight;
+    @at-root{
+        @keyframes faderight{
+            0% {
+            opacity: 0;
+            transform: translate3d(100%, -50%, 0);
+        }
+        100% {
+            opacity: 1;
+            transform: translate3d(0%, -50%, 0);
+        }
+        }
+    }
+}
+.zoomIn{
+    animation-name: zoomin;
+    @at-root{
+        @keyframes zoomin{
+            0% {
+                opacity: 0;
+                transform: scale3d(.9, .9, .9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale3d(1, 1, 1);
+            }
+        }
+    }
+}
+.slideLeft{
+    animation-name: slideleft;
+    @at-root{
+        @keyframes slideleft{
+            0% {
+                transform: translate3d(-100%, 0, 0);
+                visibility: visible;
+            }
+            100% {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    }
+}
+.slideUp2{
+    animation-name: slideup2;
+    @at-root{
+        @keyframes slideup2{
+            0% {
+                opacity: 0;
+                transform: translate3d(0, 200px, 0);
+                visibility: visible;
+            }
+            40% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+    }
+}
+
+
+.blur{
+    animation-name: blur;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    @at-root{
+        @keyframes blur{
+            0% {
+            filter: blur(0px);
+        }
+        100% {
+            filter: blur(10px);
+        }
+        }
+    }
+}
+.blurInv{
+    animation-name: blurinv;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    @at-root{
+        @keyframes blurinv{
+            0% {
+                filter: blur(20px);
+            }
+            100% {
+                filter: blur(0px);
+            }
+        }
+    }
+}
+.blurInv1{
+    animation-name: blurinv1;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    @at-root{
+        @keyframes blurinv1{
+            0% {
+                filter: blur(20px);
+            }
+            100% {
+                filter: blur(10px);
+            }
+        }
+    }
+}
+.blurInv2{
+    animation-name: blurinv2;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    @at-root{
+        @keyframes blurinv2{
+            0% {
+                filter: blur(20px);
+            }
+            100% {
+                filter: blur(7px);
+            }
+        }
+    }
+}
+.blurInv3{
+    animation-name: blurinv3;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    @at-root{
+        @keyframes blurinv3{
+            0% {
+                filter: blur(20px);
+            }
+            100% {
+                filter: blur(4px);
+            }
+        }
+    }
+}
+.blurInv4{
+    animation-name: blurinv4;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    @at-root{
+        @keyframes blurinv4{
+            0% {
+                filter: blur(20px);
+            }
+            100% {
+                filter: blur(2px);
+            }
+        }
+    }
+}
+.blurInv5{
+    animation-name: blurinv5;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    @at-root{
+        @keyframes blurinv5{
+            0% {
+                filter: blur(20px);
+            }
+            100% {
+                filter: blur(1px);
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+//healpers
+@import "helpers/variables-custom";  //Override bootstrap variables
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/placeholders";
+
+
+
+//  base
+@import "base/resets";
+@import "base/typography";
+
+// Layouts
+@import "layouts/scaffolding";
+@import "layouts/grid";
+@import "layouts/containers";
+@import "layouts/navigation";
+@import "layouts/section-intro";
+@import "layouts/section-Philosophy";
+@import "layouts/section-collection";
+@import "layouts/contact-form";
+@import "layouts/footer";
+
+
+//components
+@import "components/loader";
+@import "components/buttons";
+@import "components/title-header";
+@import "components/logo";
+@import "components/scroll";
+@import "components/slider";
+@import "components/title-box";
+@import "components/paragraph";
+@import "components/social-icons";
+@import "components/blog-post";
+@import "components/social-wall";
+@import "components/fb-content";
+@import "components/animations";
+@import "components/slider-page";
+
+// Pages
+@import "pages/philosophy";
+@import "pages/social-wall";
+
+
+
+
+
+
+
+
+
+
+

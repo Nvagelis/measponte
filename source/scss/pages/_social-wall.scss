@@ -1,0 +1,22 @@
+.instagram-1,
+.instagram-2,
+.facebook{
+    margin-bottom: 10px;
+}
+
+.instagram-1{
+    figure + figure{
+        margin-top: 10px;
+    }
+}
+
+.wall-style1,
+.wall-style4{
+    .facebook{
+        clear: left;
+        @include media-to('md'){
+            clear: none;
+        }
+    }
+}
+

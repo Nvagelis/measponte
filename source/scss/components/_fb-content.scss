@@ -1,0 +1,52 @@
+.fb-content{
+    background-color: $light-bg;
+    .fb-wrap{
+        padding: 50px;
+    }
+    .fb-head-icon{
+        @include font-size(50px);
+        color: $graf-color;
+        display: inline-block;
+        height: 20%;
+    }
+    .text{
+        height: 60%;
+        overflow: hidden;
+    }
+    p{
+        @include font-size(16px);
+        color: $darktext;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    .hor-line{
+        @include make-hor-line;
+        margin-top: 25px;
+    }
+    .micro{
+        color: $darktext;
+        height: 20%;
+        overflow: hidden;
+        .micro-inner{
+            position: relative;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+        i{
+            color: $graf-color;
+        }
+    }
+    .control-button{
+        float: right;
+        margin-top: 10px;
+        .next{
+            padding: 5px 8px;
+        }
+        span{
+            @include font-size(14px);
+            font-weight: 300;
+        }
+    }
+}
+

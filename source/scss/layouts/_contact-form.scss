@@ -1,0 +1,31 @@
+.contact-form{
+    @include positionig(absolute, 50%, auto, 0, -50%);
+    width: 0; //animation value
+    right: 200px;
+    background: $gray-bg;
+    background: rgba($orange-bg, .4);
+    height: 400px;
+    transition: width 1s ease;
+    .wrap{
+        @include positionig(absolute, 50%, 30%, 0, -50%);
+        opacity: 0; //animation value
+    }
+    &.animWidth{
+        @include calc-width(200px);
+    }
+}
+.contact-form{
+    p{
+        @include font-size(12px);
+        color: $lighttext;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    h3{
+        @include font-size(13px);
+        font-family: $secondary-font-family;
+        color: $orangetext;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+    }
+}

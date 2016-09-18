@@ -1,0 +1,96 @@
+//colors
+$light: #fff;
+$black: #000;
+
+$dark: #0f0e15;
+$grey: #343434;
+$menu-dark: #1d1d1b;
+
+$orange: #f2b441;
+
+
+
+//body background color
+$body-bg: $light;
+
+//bg backgrounds colors
+$light-bg: $light;
+$orange-bg: $orange;
+$dark-bg: $dark;
+$gray-bg: $grey;
+$black-bg: $black;
+
+//text colors
+$lighttext: $light;
+$darktext: $dark;
+$orangetext: $orange;
+$greytext: $grey;
+
+//link base color
+$link-default: $light;
+
+//line and graphic colors
+$graf-color: $orange;
+$icons-color-orange: $orange;
+
+//navigation
+$menu-bg: $menu-dark;
+$menu-link-color: $light;
+
+//buttons
+$orange-bg: $orange;
+
+
+// Typography
+
+$font-family: 'PT Serif', serif;
+$secondary-font-family: 'Muli', sans-serif;
+
+$font-size: 16px;
+$line-height-base: 1.428571429;
+$font-weight: 300;
+$p-margin-bottom: 15px;
+
+//icons
+//font awesome 
+
+$icons: (
+  facebook: "\f09a",
+  instagram: "\f16d",
+  long-arrow-left: "\f177",
+  long-arrow-right: "\f178",
+  calendar: "\f073",
+  clock-o: "\f017",
+);
+
+
+// Media queries breakpoints
+$screen-xs:                  490px;
+$screen-xs-min:              $screen-xs;
+
+$screen-sm:                  650px;
+$screen-sm-min:              $screen-sm;
+
+$screen-md:                  980px;
+$screen-md-min:              $screen-md;
+
+$screen-lg:                  1024px;
+$screen-lg-min:              $screen-lg;
+
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);
+
+$grid: 12;
+$gap: 30px;   //30px ~ 36px
+
+//$container-sm: (720px + $gap);
+//$container-md: (940px + $gap);
+$container: (1024px + $gap);
+
+$breakpoints: (
+    'xs' : $screen-xs-min,
+    'sm' : $screen-sm-min,
+    'md' : $screen-md-min,
+    'lg' : $screen-lg-min,
+);

@@ -1,0 +1,89 @@
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin calc-height($expression) {
+  height: calc(100vh - #{$expression});
+}
+@mixin calc-width($expression) {
+  width: calc(100% - #{$expression});
+}
+@mixin calc-size($width, $height){
+    @if $width == 0{
+        width: 100%; 
+    }@else{
+        width: calc(100% - #{$width});
+    }
+    @if $height == 0{
+        height: 100vh; 
+    }@else{
+        height: calc(100vh - #{$height});
+    }
+}
+@mixin abs-pos($pos:absolute){
+    position: $pos;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+@mixin hor-center{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+@mixin ver-center{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+@mixin positionig($pos, $top, $left, $transx, $transy){
+    position: $pos;
+    top: $top;
+    left: $left;
+    transform: translate($transx, $transy); 
+}
+@mixin bg-image ($img, $posx:50%, $posy:50%){
+    background-image: $img;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: $posx $posy;
+}
+
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: alpha(opacity=$opacity-ie);
+}
+
+@mixin hide-text() {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+@mixin img-block{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@mixin reset-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

@@ -1,0 +1,104 @@
+.post{
+    @include size(100%, 80vh);
+    position: relative;
+    p{
+        @include font-size(12px);
+        width: 60%;
+        font-family: $font-family;
+        text-align: justify;
+        padding: 30px 25px;
+        line-height: 14px;
+        position: absolute;
+        z-index: 2;
+        opacity: 0;   //animation value
+        @include media-to('sm'){
+            @include font-size(16px);
+            padding: 60px 50px;
+            line-height: 20px;
+        }
+    }
+    img{
+        opacity: 0;   //animation value
+        position: absolute;
+        z-index: 1;
+        @include img-block;
+        @include media-to('md'){
+            @include size(auto, 60vh);
+        }
+    }
+}
+
+.post-lf{
+    p{
+        background: $gray-bg;
+        color: $lighttext;
+        top: 20vh;
+        left: 10vw;
+        @include media-to('md'){
+            width: 40%;
+        }
+    }
+    img{
+        right: auto;
+        top: auto;
+        @include media-to('md'){
+            right: 25vw;
+            top: 5vh;
+        }
+    }
+}
+.post-rg{
+    p{
+        background: $light-bg;
+        color: $greytext;
+        top: 10vh;
+        right: 20vw;
+        @include media-to('md'){
+            width: 30%;
+        }
+    }
+    img{
+        top: auto;
+        left: auto;
+        @include media-to('md'){
+            top: 5vh;
+            left: 15vw;
+        }
+    }
+}
+.post-rrg{
+    p{
+        background: $dark-bg;
+        color: $lighttext;
+        top: 40vh;
+        right: 25vw;
+        @include media-to('md'){
+            width: 40%;
+        }
+    }
+    img{
+        top: auto;
+        left: auto;
+        @include media-to('md'){
+            top: 5vh;
+            left: 30vw;
+        }
+    }
+}
+.post-cnt{
+    p{
+        @include positionig(absolute, 45vh, 50%, -50%, 0);
+        background: $gray-bg;
+        color: $lighttext;
+        @include media-to('md'){
+            width: 35%;
+        }
+    }
+    img{
+        @include positionig(absolute, auto, auto, 0, 0);
+        @include media-to('md'){
+            @include positionig(absolute, 5vh, 50%, -50%, 0);
+        }
+    }
+}
+

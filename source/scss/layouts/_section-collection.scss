@@ -1,0 +1,33 @@
+.collection{
+    .logo{
+        top: 5%;
+        
+    }
+    .photo-col{
+        @include positionig(absolute, 50%, 0, 0, -50%);
+        height: 70vh;
+        img{
+            height: 100%;
+            display: block;
+        }
+    }
+    .title-box{
+        position: absolute;
+        top: 5vh;
+        right: 5vw;
+        h2{
+            color: $lighttext;
+        }
+    }
+    .ph-parag{
+        position: absolute;
+        background-color: $gray-bg;
+        left: 40vw;
+        bottom: 20vh;
+    }
+    .discover{
+        position: absolute;
+        bottom: calc(21vh - 35px);
+        left: 50vw;
+    }
+}

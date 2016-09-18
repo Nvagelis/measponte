@@ -1,0 +1,13 @@
+.ph-parag{
+    padding: 50px;
+    width: 540px;
+    @include media-to('lg'){
+        width: 720px;
+    }
+    p{
+        @include font-size(14px);
+        line-height: 20px;
+        text-align: justify;
+    }
+}
+

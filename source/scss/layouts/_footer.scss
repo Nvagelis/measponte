@@ -1,0 +1,22 @@
+.footer{
+    @include clearfix;
+    @include font-size(10px);
+    position: absolute;
+    bottom: 0;
+    line-height: 40px;
+    color: $lighttext;
+    width: 100%;
+    
+    .left-footer{
+        float: left;
+        padding-left: 40px;
+    }
+    .right-footer{
+        float: right;
+        padding-right: 40px;
+        span{
+            color: $darktext;
+        }
+    }
+}
+

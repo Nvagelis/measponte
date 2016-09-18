@@ -1,0 +1,18 @@
+.social{
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    &.org i{
+        color: $graf-color;
+    }
+    &.wht i{
+        color: $lighttext;
+    }
+    ul{
+        @include reset-list;
+    }
+    li + li{
+        margin-top: 50px;
+    }
+}
+

@@ -1,0 +1,11 @@
+@mixin make-hor-line{
+    width: 0; // animation value
+    height: 2px;
+    background-color: $graf-color;
+    transition: width 1s ease;
+}
+@mixin make-vert-line{
+    background-color: $graf-color;
+    width: 1px;
+    height: 0; // animation value
+}

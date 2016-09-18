@@ -1,0 +1,32 @@
+.menu-outer{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 0; //animation value
+    height: 400px;
+    background-color: $menu-bg;
+    z-index: 10;
+    transition: all 1s ease;
+    &.animWidth{
+        width: 200px;
+    }
+}
+.main-navigation{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    ul{
+        @include reset-list;
+    }
+    li{
+        text-align: center;
+        line-height: 50px;
+        opacity: 0; //animation value
+        a{
+            @include font-size(12px);
+            text-transform: uppercase;
+            color: $menu-link-color;
+        }
+    }
+}

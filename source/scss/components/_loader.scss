@@ -1,0 +1,73 @@
+.loader{
+    @include abs-pos(fixed);
+    @include size(100%, 100%);
+    background: $orange-bg;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .load-logo{
+        @include positionig(absolute, 40%, 50%, -50%, 0);
+        @include size(auto, 50px);
+        z-index: 999;
+    }
+    .maxcube{
+        @include size(50px, 50px);
+        margin: 0 auto;
+        margin-top: 49px;
+        position: relative;
+        transform: rotateZ(45deg);
+    }
+    .mincube{
+        @include size(50%, 50%);
+        float: left;
+        position: relative;
+        &:before{
+            content: "";
+            @include abs-pos(absolute);
+            @include size(100%, 100%);
+            background-color: $light-bg;
+            animation: cube 2.76s infinite linear both;
+            transform-origin: 100% 100%;
+            @at-root{
+                @keyframes cube{
+                    0%, 10% {
+                        transform: perspective(136px) rotateX(-180deg);
+                        opacity: 0;
+                    }
+                    25%, 75% {
+                        transform: perspective(136px) rotateX(0deg);
+                        opacity: 1;
+                    }
+                    90%, 100% {
+                        transform: perspective(136px) rotateY(180deg);
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+    .c1{
+        transform: scale(1.1);
+    }
+    .c2{
+        transform: scale(1.1) rotateZ(90deg);
+        &:before{
+            animation-delay: 0.35s;
+        }
+    }
+    .c4{
+        transform: scale(1.1) rotateZ(270deg);
+        &:before{
+            animation-delay: 1.04s;
+        }
+    }
+    .c3{
+        transform: scale(1.1) rotateZ(180deg);
+        &:before{
+            animation-delay: 0.69s;
+        }
+    }
+}
+

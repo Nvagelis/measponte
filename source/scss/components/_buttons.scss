@@ -1,0 +1,59 @@
+.btn{
+    @include font-size(11px);
+    font-family: $secondary-font-family;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 70px;
+    letter-spacing: 16px;
+    text-transform: uppercase;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 0;
+    &:hover:after{
+        height: 100%;
+    }
+}
+.btn-org{
+    background: $orange-bg;
+    color: $darktext;
+    &:after{
+        @extend %btn-after;
+        background: $dark-bg;
+    }
+    &:hover{
+        color: $lighttext;
+    }
+}
+.btn-blc{
+    background: $light-bg;
+    color: $darktext;
+    &:after{
+        @extend %btn-after;
+        background: $dark-bg;
+    }
+    &:hover{
+        color: $lighttext;
+    }
+}
+
+.control-button{
+    display: inline-block;
+    .prev, .next{
+        padding: 11px 15px;
+        display: inline-block;
+        border: 1px solid $graf-color;
+    }
+    .prev{
+        margin-right: 10px;
+    }
+    span{
+        @include font-size(20px);
+        color: $graf-color;
+    }
+}

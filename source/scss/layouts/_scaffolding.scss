@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Body reset
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height-base;
+  color: $lighttext;
+  background-color: $body-bg;
+}
+
+section{
+    position: relative;
+}
+
+a {
+  color: $link-default;
+  text-decoration: none;
+}
+
+p{
+    margin: 0;
+}

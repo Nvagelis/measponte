@@ -1,0 +1,27 @@
+.intro{
+    .wrap{
+        @include calc-size(100px, 100px);
+        @include abs-pos;
+        margin: 50px;
+    }
+}
+.intro{
+    .title{
+        @include positionig(absolute, 50%, 0, 0, -50%);
+        @include size(100%, auto);
+        text-align: center;
+    }
+    .hor-line{
+        @include make-hor-line;
+        @include positionig(relative, 0, 50%, -50%, 0);
+        margin-top: 50px;
+        &.lineWidth{
+            width: 150px;
+        }
+    }
+}
+
+
+
+
+

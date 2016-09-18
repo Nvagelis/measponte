@@ -1,0 +1,27 @@
+.scroll{
+    @include positionig(absolute, auto, 50%, -50%, 0);
+    bottom: 0;
+    .scroll-text{
+        margin-bottom: 10px;
+        text-align: center;
+        overflow: hidden;
+        height: 15px;
+        > p{
+            @include font-size(12px);
+            font-family: $secondary-font-family;
+            line-height: 15px;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            transform: translate3d(0, 100%, 0); //animation value
+        }
+    }
+    .vert-line{
+        @include make-vert-line;
+        @include positionig(relative, auto, 50%, -50%, 0);
+        transition: height 1s ease;
+        &.animeHeight{
+            height: 80px;
+        }
+    }
+}
+

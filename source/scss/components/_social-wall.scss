@@ -1,0 +1,50 @@
+.wall{
+    @include size(100%, auto);
+    @include media-to('sm'){
+        width: calc(100% - 200px);
+    }
+    .row{
+        padding: 0 10% 10%;
+    }
+}
+.facebook{
+    opacity: 0; //animation value
+}
+figure{
+    position: relative;
+    background-color: $dark-bg;
+    overflow: hidden;
+    opacity : 0; //animation value
+    img{
+        @include img-block;
+        transition: all .3s;
+    }
+    figcuption{
+        @include abs-pos;
+        @include size(100%, 100%);
+    }
+    span{
+        @include font-size(30px);
+        @include positionig(absolute, 50%, 50%, -50%, -50%);
+        @include opacity(0);
+        z-index: 10;
+        transition: all .3s;
+    }
+    a{
+        @include abs-pos;
+        @include size(100%, 100%);
+        display: block;
+    }
+    &:hover{
+        img{
+            @include opacity(.4);
+            transform: scale(1.1);
+            transition: all .3s;
+        }
+        span{
+            @include opacity(1);
+            transition: all .3s;
+        }
+    }
+}
+

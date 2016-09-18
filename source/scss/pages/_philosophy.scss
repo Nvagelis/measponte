@@ -1,0 +1,15 @@
+.blog-header{
+    .title{
+        @include positionig(absolute, 50%, 5%, 0, -50%);
+        text-align: left;
+    }
+    .hor-line{
+        @include make-hor-line;
+        float: left;
+        margin-top: 50px;
+        &.lineWidth{
+            width: 150px;
+        }
+    }
+}
+
