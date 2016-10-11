@@ -8,8 +8,6 @@ $menu-dark: #1d1d1b;
 
 $orange: #f2b441;
 
-
-
 //body background color
 $body-bg: $light;
 
@@ -82,10 +80,8 @@ $screen-sm-max:              ($screen-md-min - 1);
 $screen-md-max:              ($screen-lg-min - 1);
 
 $grid: 12;
-$gap: 30px;   //30px ~ 36px
+$gap: 30px;
 
-//$container-sm: (720px + $gap);
-//$container-md: (940px + $gap);
 $container: (1024px + $gap);
 
 $breakpoints: (

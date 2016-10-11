@@ -1,7 +1,6 @@
 .collection{
     .logo{
         top: 5%;
-        
     }
     .photo-col{
         @include positionig(absolute, 50%, 0, 0, -50%);

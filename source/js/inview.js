@@ -40,8 +40,8 @@ $(document).ready(function (){
     });
     
     $rows.bind('inview', function (event, visible) {
-        if (visible && !$(this).find('.facebook').hasClass('animated')) {
-            var item = $(this);
+        var item = $(this);
+        if (visible && !item.find('.facebook').hasClass('animated')) {
             setTimeout(function(){
             item.find('.facebook').addClass('animated fadeUp2');
             item.find('figure').each(function(i){
@@ -56,8 +56,7 @@ $(document).ready(function (){
     
     $philosophyTitle.bind('inview', function(event, visible) {
         var item = $(this);
-        if (visible && !$(this).find('h3').hasClass('animated')) {
-            //var item = $(this);
+        if (visible && !item.find('h3').hasClass('animated')) {
             setTimeout(function(){
                 item.find('.hide-cont-up h2').addClass('animated slideUp');
                 setTimeout(function(){
@@ -70,8 +69,8 @@ $(document).ready(function (){
         }
     });
     $collectionTitle.bind('inview', function(event, visible) {
-        if (visible && !$(this).find('h3').hasClass('animated')) {
-            var item = $(this);                              
+        var item = $(this);
+        if (visible && !item.find('h3').hasClass('animated')) {                              
             setTimeout(function(){
                 item.find('.hide-cont-up h2').addClass('animated slideUp');
                 setTimeout(function(){
@@ -85,64 +84,65 @@ $(document).ready(function (){
     });
     
     $collectionLogo.bind('inview', function(event, visible) {
-        if (visible && !$(this).hasClass('animated')) {  
-            var item = $(this);
+        var item = $(this);
+        if (visible && !item.hasClass('animated')) {  
             item.addClass('animated fadeUp');
         }
     });
     
     $('.post-lf').bind('inview', function(event, visible) {
-            if (visible && !$(this).find("img").hasClass('animated')) {
-                var item = $(this);
+        var item = $(this);
+        if (visible && !item.find("img").hasClass('animated')) {
+            setTimeout(function(){
+                item.find("img").addClass('animated slideUp2');
                 setTimeout(function(){
-                    item.find("img").addClass('animated slideUp2');
-                    setTimeout(function(){
-                        item.find("p").addClass('animated slideUp2');
-                    },500);
-                    
+                    item.find("p").addClass('animated slideUp2');
                 },500);
-                
-            }
-        });
-    $('.post-rg').bind('inview', function(event, visible) {                  
-            if (visible && !$(this).find("img").hasClass('animated')) {
-                var item = $(this);
+
+            },500);
+
+        }
+    });
+    $('.post-rg').bind('inview', function(event, visible) {
+        var item = $(this);
+        if (visible && !item.find("img").hasClass('animated')) {
+            var item = $(this);
+            setTimeout(function(){
+                item.find("img").addClass('animated slideUp2');
                 setTimeout(function(){
-                    item.find("img").addClass('animated slideUp2');
-                    setTimeout(function(){
-                        item.find("p").addClass('animated slideUp2');
-                    },500);
-                    
+                    item.find("p").addClass('animated slideUp2');
                 },500);
-                
-            }
-        });
-        $('.post-rrg').bind('inview', function(event, visible) {                  
-            if (visible && !$(this).find("img").hasClass('animated')) {
-                var item = $(this);
+
+            },500);
+
+        }
+    });
+    $('.post-rrg').bind('inview', function(event, visible) {
+        var item = $(this);
+        if (visible && !item.find("img").hasClass('animated')) {
+            setTimeout(function(){
+                item.find("img").addClass('animated slideUp2');
                 setTimeout(function(){
-                    item.find("img").addClass('animated slideUp2');
-                    setTimeout(function(){
-                        item.find("p").addClass('animated slideUp2');
-                    },500);
-                    
+                    item.find("p").addClass('animated slideUp2');
                 },500);
-                
-            }
-        });
-        $('.post-cnt').bind('inview', function(event, visible) {                  
-            if (visible && !$(this).find("img").hasClass('animated')) {
-                var item = $(this);
+
+            },500);
+
+        }
+    });
+    $('.post-cnt').bind('inview', function(event, visible) {
+        var item = $(this);
+        if (visible && !item.find("img").hasClass('animated')) {
+            setTimeout(function(){
+                item.find("img").addClass('animated fadeUp');
                 setTimeout(function(){
-                    item.find("img").addClass('animated fadeUp');
-                    setTimeout(function(){
-                        item.find("p").addClass('animated fadeUp');
-                    },500);
-                    
+                    item.find("p").addClass('animated fadeUp');
                 },500);
-                
-            }
-        });
+
+            },500);
+
+        }
+    });
     
     $(window).trigger('scroll');
 });

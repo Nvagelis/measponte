@@ -38,13 +38,13 @@ $(window).load(function(){
     
     $next.on('click', function (e){
         e.preventDefault();
-    if(current >= $slides.length-1 || $view.is(':animated')){return false;}
+    if(current >= $slides.length-1 || $view.is(':animated')){return;}
         current ++;
         move(current);
     });
     $prev.on('click', function (e){
         e.preventDefault();
-        if(current <= 0 || $view.is(':animated')){return  false;}
+        if(current <= 0 || $view.is(':animated')){return ;}
         current --;
         move(current);
     });
